@@ -7,7 +7,7 @@ def fanon(bot,update):
   bot.message.reply_text("the fan is on")
 
   from Adafruit_IO import Client
-  aio = Client('ramprasad11235', 'aio_Mjuc139j1zQ9sPWlqTKIth9u75IJ')
+  aio = Client('ramprasad11235', 'aio_oAYz40MJakOs6e5yjwWHshNhcUU0')
   aio.send('fan', 1)
   data = aio.receive('fan')
   print('Received value: {0}'.format(data.value))
